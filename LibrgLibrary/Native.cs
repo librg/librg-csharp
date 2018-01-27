@@ -42,7 +42,7 @@ namespace Librg
         public static extern LibrgContext *librg_allocate_ctx();
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_release(LibrgContext *ctx);
+        public static extern void librg_release(void *ctx);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
         public static extern void librg_init(LibrgContext *ctx);
@@ -105,51 +105,54 @@ namespace Librg
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
         public static extern bool librg_event_succeeded(ref librg_event_t evt);
-
-
-        [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_init(ref librg_data_t data);
+        */
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_init_size(ref librg_data_t data, UIntPtr size);
+        public static extern void librg_data_init(LibrgData *data);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_free(ref librg_data_t data);
+        public static extern void librg_data_init_size(LibrgData* data, UIntPtr size);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_reset(ref librg_data_t data);
+        public static extern LibrgData* librg_data_init_new();
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_grow(ref librg_data_t data, UIntPtr min_size);
+        public static extern void librg_data_free(LibrgData* data);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern UIntPtr librg_data_capacity(ref librg_data_t data);
+        public static extern void librg_data_reset(LibrgData* data);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern UIntPtr librg_data_get_rpos(ref librg_data_t data);
+        public static extern void librg_data_grow(LibrgData* data, UIntPtr min_size);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern UIntPtr librg_data_get_wpos(ref librg_data_t data);
+        public static extern UIntPtr librg_data_capacity(LibrgData* data);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_set_rpos(ref librg_data_t data, UIntPtr position);
+        public static extern UIntPtr librg_data_get_rpos(LibrgData* data);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_set_wpos(ref librg_data_t data, UIntPtr position);
+        public static extern UIntPtr librg_data_get_wpos(LibrgData* data);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_rptr(ref librg_data_t data, void* ptr, UIntPtr size);
+        public static extern void librg_data_set_rpos(LibrgData* data, UIntPtr position);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_wptr(ref librg_data_t data, void* ptr, UIntPtr size);
+        public static extern void librg_data_set_wpos(LibrgData* data, UIntPtr position);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_rptr_at(ref librg_data_t data, void* ptr, UIntPtr size, IntPtr position);
+        public static extern void librg_data_rptr(LibrgData* data, void* ptr, UIntPtr size);
 
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-        public static extern void librg_data_wptr_at(ref librg_data_t data, void* ptr, UIntPtr size, IntPtr position);
+        public static extern void librg_data_wptr(LibrgData* data, void* ptr, UIntPtr size);
 
+        [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void librg_data_rptr_at(LibrgData* data, void* ptr, UIntPtr size, IntPtr position);
 
+        [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void librg_data_wptr_at(LibrgData* data, void* ptr, UIntPtr size, IntPtr position);
+
+        /*
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
         public static extern UInt32 librg_entity_create(ref librg_ctx_t ctx, UInt32 type);
 

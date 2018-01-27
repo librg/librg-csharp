@@ -218,6 +218,9 @@ namespace Librg
         #endregion
 
         [StructLayout(LayoutKind.Sequential)]
+        public struct LibrgData { }
+
+        [StructLayout(LayoutKind.Sequential)]
         public struct vector3
         {
             public float x;

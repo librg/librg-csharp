@@ -15,6 +15,14 @@ namespace LibrgDemo
 
             ctx.Start("0.0.0.0", 7777);
 
+            Data mydata = new Data();
+            mydata.WriteFloat64(2525.5f);
+            mydata.WriteInt8(2);
+            mydata.WriteUInt32(2424);
+            Console.WriteLine(mydata.ReadFloat64());
+            Console.WriteLine(mydata.ReadInt8());
+            Console.WriteLine(mydata.ReadUInt32());
+
             while (true)
             {
                 ctx.Tick();
@@ -41,11 +49,7 @@ namespace LibrgDemo
 
         static void Main(string[] args)
         {
-            Console.WriteLine("ENet demo");
-
             Console.WriteLine(Native.DLL_NAME);
-
-            Console.WriteLine(Option.Get(Option.Options.LIBRG_DEFAULT_DATA_SIZE));
 
             var server = new Thread(Server);
             server.Start();
