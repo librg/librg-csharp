@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrgLibrary", "LibrgLibrary\LibrgLibrary.csproj", "{9547F76A-5C7E-45B0-8C82-BE462B624760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrgDemo", "LibrgDemo\LibrgDemo.csproj", "{E3C64DAA-BABE-4BDF-B1C2-96ED038EA758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9547F76A-5C7E-45B0-8C82-BE462B624760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9547F76A-5C7E-45B0-8C82-BE462B624760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9547F76A-5C7E-45B0-8C82-BE462B624760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9547F76A-5C7E-45B0-8C82-BE462B624760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C64DAA-BABE-4BDF-B1C2-96ED038EA758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C64DAA-BABE-4BDF-B1C2-96ED038EA758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C64DAA-BABE-4BDF-B1C2-96ED038EA758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C64DAA-BABE-4BDF-B1C2-96ED038EA758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {341BAAD8-70F0-491D-8359-6EFE529BEE18}
+	EndGlobalSection
+EndGlobal
