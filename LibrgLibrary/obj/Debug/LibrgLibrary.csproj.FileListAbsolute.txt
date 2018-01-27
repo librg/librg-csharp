@@ -1,8 +1,0 @@
-D:\Projects\reguider\librg-csharp\LibrgLibrary\obj\Debug\LibrgLibrary.csprojResolveAssemblyReference.cache
-D:\Projects\reguider\librg-csharp\LibrgLibrary\obj\Debug\LibrgLibrary.csproj.CoreCompileInputs.cache
-D:\Projects\reguider\librg-csharp\bin\LibrgLibrary.dll
-D:\Projects\reguider\librg-csharp\bin\LibrgLibrary.pdb
-D:\Projects\reguider\librg-csharp\LibrgLibrary\obj\Debug\LibrgLibrary.dll
-D:\Projects\reguider\librg-csharp\LibrgLibrary\obj\Debug\LibrgLibrary.pdb
-D:\Projects\reguider\librg-csharp\Binary\LibrgLibrary.dll
-D:\Projects\reguider\librg-csharp\Binary\LibrgLibrary.pdb
